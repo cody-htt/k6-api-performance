@@ -1,0 +1,7 @@
+.cache
+.expo
+.expo-shared
+.vscode
+package.json
+package-lock.json
+yarn.lock

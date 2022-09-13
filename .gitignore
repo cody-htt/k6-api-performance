@@ -1,0 +1,8 @@
+# dependencies
+node_modules
+
+#webpack bundle
+dist
+
+# we're use yarn not npm
+package-lock.json
