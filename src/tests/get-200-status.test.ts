@@ -1,7 +1,7 @@
 import { sleep } from 'k6';
 import { Options } from 'k6/options';
 import { verifyResStatus } from '../utils/verifyResponse';
-import { checkErrorRate } from '../utils/checkErrorRate';
+import { checkErrorRate } from '../utils/utils';
 import http from 'k6/http';
 
 export let options: Options = {

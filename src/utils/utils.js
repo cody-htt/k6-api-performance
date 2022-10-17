@@ -1,4 +1,5 @@
 import { Rate } from 'k6/metrics';
+import { BASE_URL } from '../envConfig';
 
 const responseStatusCounters = {
   2: new Rate('2xx_rate'),
@@ -13,3 +14,9 @@ export function checkErrorRate(response) {
     v.add(k === statusGroup)
   );
 }
+
+export function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+export const getBaseUrl = path => `${BASE_URL}/${path}`;

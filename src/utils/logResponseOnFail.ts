@@ -1,4 +1,6 @@
-export function logResponseOnFail(response) {
+import { RefinedResponse, ResponseType } from 'k6/http';
+
+export function logResponseOnFail(response: RefinedResponse<ResponseType> | any) {
   console.error(`Failed With Status: ${response.status}`);
   console.error(`Failed With URL: ${response.url}`);
   console.info(
